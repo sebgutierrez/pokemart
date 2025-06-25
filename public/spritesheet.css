@@ -1,0 +1,880 @@
+.pkspr-ball-dive {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: 0px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-dusk {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -64px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-great {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -128px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-heal {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -192px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-luxury {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -256px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-nest {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -320px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-net {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -384px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-poke {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -448px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-quick {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -512px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-repeat {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -576px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-timer {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -640px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-ball-ultra {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -704px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-battle-effect-dire-hit {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -768px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-battle-effect-guard-spec {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -832px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-battle-effect-x-accuracy {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -896px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-battle-effect-x-attack {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -960px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-battle-effect-x-defense {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1024px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-battle-effect-x-sp-atk {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1088px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-battle-effect-x-sp-def {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1152px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-battle-effect-x-speed {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1216px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-aspear {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1280px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-babiri {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1344px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-charti {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1408px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-cheri {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1472px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-chesto {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1536px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-chilan {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1600px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-chople {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1664px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-coba {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1728px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-colbur {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1792px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-haban {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1856px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-kasib {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1920px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-kebia {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1984px 0px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-leppa {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: 0px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-lum {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -64px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-occa {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -128px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-oran {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -192px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-passho {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -256px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-payapa {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -320px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-pecha {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -384px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-rawst {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -448px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-rindo {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -512px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-shuca {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -576px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-sitrus {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -640px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-tanga {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -704px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-wacan {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -768px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-berry-yache {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -832px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-mail-air-mail {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -896px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-mail-bridge-mail-d {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -960px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-mail-bridge-mail-m {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1024px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-mail-bubble-mail {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1088px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-mail-flame-mail {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1152px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-mail-grass-mail {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1216px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-mail-harbor-mail {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1280px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-mail-space-mail {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1344px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-mail-tropic-mail {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1408px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-mail-wave-mail {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1472px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-other-item-escape-rope {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1536px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-other-item-honey {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1600px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-other-item-max-repel {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1664px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-other-item-poke-doll {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1728px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-other-item-repel {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1792px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-other-item-super-repel {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1856px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-antidote {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1920px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-awakening {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1984px -64px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-burn-heal {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: 0px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-elixir {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -64px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-ether {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -128px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-fresh-water {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -192px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-full-heal {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -256px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-full-restore {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -320px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-hyper-potion {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -384px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-ice-heal {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -448px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-lemonade {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -512px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-max-potion {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -576px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-max-revive {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -640px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-moomoo-milk {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -704px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-paralyze-heal {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -768px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-potion {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -832px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-revive {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -896px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-recovery-super-potion {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -960px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-stat-item-calcium {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1024px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-stat-item-carbos {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1088px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-stat-item-hp-up {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1152px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-stat-item-iron {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1216px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-stat-item-pp-max {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1280px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-stat-item-pp-up {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1344px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-stat-item-protein {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1408px -128px;
+	 background-size: 2048px 192px;
+}
+ .pkspr-stat-item-zinc {
+	 display: inline-block;
+	 width: 64px;
+	 height: 64px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -1472px -128px;
+	 background-size: 2048px 192px;
+}
