@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "prisma": {
-    "seed": "tsx ./prisma/dev-seed.ts"
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/dev-seed.ts"
   },
   "dependencies": {
     "@prisma/adapter-better-sqlite3": "^6.10.1",
@@ -29,6 +29,7 @@
     "eslint-config-next": "15.3.4",
     "prisma": "^6.10.1",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
     "tsx": "^4.20.3",
     "typescript": "^5"
   }

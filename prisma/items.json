@@ -1,0 +1,508 @@
+{
+	"items": [
+		{
+			"name": "Dive Ball",
+			"category": "Poké Ball",
+			"description": "A somewhat different Poké Ball that works especially well on Pokémon that live in the sea.",
+			"buyPrice": 1000,
+			"sellPrice": 500,
+			"debutGeneration": "III",
+			"cssClass": "ball-dive"
+		},
+		{
+			"name": "Dusk Ball",
+			"category": "Poké Ball",
+			"description": "A somewhat different Poké Ball that makes it easier to catch wild Pokémon at night or in dark places like caves.",
+			"buyPrice": 1000,
+			"sellPrice": 500,
+			"debutGeneration": "IV",
+			"cssClass": "ball-dusk"
+		},
+		{
+			"name": "Great Ball",
+			"category": "Poké Ball",
+			"description": "A good, high-performance Ball that provides a higher Pokémon catch rate than a standard Poké Ball.",
+			"buyPrice": 600,
+			"sellPrice": 300,
+			"debutGeneration": "I",
+			"cssClass": "ball-great"
+		},
+		{
+			"name": "Heal Ball",
+			"category": "Poké Ball",
+			"description": "A remedial Poké Ball that restores the caught Pokémon's HP and eliminates any status problem.",
+			"buyPrice": 300,
+			"sellPrice": 150,
+			"debutGeneration": "IV",
+			"cssClass": "ball-heal"
+		},
+		{
+			"name": "Luxury Ball",
+			"category": "Poké Ball",
+			"description": "A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly.",
+			"buyPrice": 1000,
+			"sellPrice": 500,
+			"debutGeneration": "III",
+			"cssClass": "ball-luxury"
+		},
+		{
+			"name": "Nest Ball",
+			"category": "Poké Ball",
+			"description": "A somewhat different Poké Ball that works especially well on weaker Pokémon in the wild.",
+			"buyPrice": 1000,
+			"sellPrice": 500,
+			"debutGeneration": "III",
+			"cssClass": "ball-nest"
+		},
+		{
+			"name": "Net Ball",
+			"category": "Poké Ball",
+			"description": "A somewhat different Poké Ball that works especially well on Water- and Bug-type Pokémon.",
+			"buyPrice": 1000,
+			"sellPrice": 500,
+			"debutGeneration": "III",
+			"cssClass": "ball-net"
+		},
+		{
+			"name": "Poké Ball",
+			"category": "Poké Ball",
+			"description": "A device for catching wild Pokémon. It is thrown like a ball at the target. It is designed as a capsule system.",
+			"buyPrice": 200,
+			"sellPrice": 100,
+			"debutGeneration": "I",
+			"cssClass": "ball-poke"
+		},
+		{
+			"name": "Quick Ball",
+			"category": "Poké Ball",
+			"description": "A somewhat different Poké Ball that has a more successful catch rate if used at the start of a wild encounter.",
+			"buyPrice": 1000,
+			"sellPrice": 500,
+			"debutGeneration": "IV",
+			"cssClass": "ball-quick"
+		},
+		{
+			"name": "Repeat Ball",
+			"category": "Poké Ball",
+			"description": "A somewhat different Poké Ball that works especially well on Pokémon species that were previously caught.",
+			"buyPrice": 1000,
+			"sellPrice": 500,
+			"debutGeneration": "III",
+			"cssClass": "ball-repeat"
+		},
+		{
+			"name": "Timer Ball",
+			"category": "Poké Ball",
+			"description": "A somewhat different Ball that becomes progressively better the more turns there are in a battle.",
+			"buyPrice": 1000,
+			"sellPrice": 500,
+			"debutGeneration": "III",
+			"cssClass": "ball-timer"
+		},
+		{
+			"name": "Ultra Ball",
+			"category": "Poké Ball",
+			"description": "An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball.",
+			"buyPrice": 1200,
+			"sellPrice": 600,
+			"debutGeneration": "I",
+			"cssClass": "ball-ultra"
+		},
+		{
+			"name": "Dire Hit",
+			"category": "Battle Items",
+			"description": "An item that raises the critical-hit ratio of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+			"buyPrice": 650,
+			"sellPrice": 325,
+			"debutGeneration": "I",
+			"cssClass": "battle-items-dire-hit"
+		},
+		{
+			"name": "Guard Spec.",
+			"category": "Battle Items",
+			"description": "An item that prevents stat reduction among the Trainer's party Pokémon for five turns after use.",
+			"buyPrice": 700,
+			"sellPrice": 350,
+			"debutGeneration": "I",
+			"cssClass": "battle-items-guard-spec"
+		},
+		{
+			"name": "X Accuracy",
+			"category": "Battle Items",
+			"description": "An item that raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+			"buyPrice": 950,
+			"sellPrice": 475,
+			"debutGeneration": "I",
+			"cssClass": "battle-items-x-accuracy"
+		},
+		{
+			"name": "X Attack",
+			"category": "Battle Items",
+			"description": "An item that raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+			"buyPrice": 500,
+			"sellPrice": 250,
+			"debutGeneration": "I",
+			"cssClass": "battle-items-x-attack"
+		},
+		{
+			"name": "X Defense",
+			"category": "Battle Items",
+			"description": "An item that raises the Defense stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+			"buyPrice": 550,
+			"sellPrice": 275,
+			"debutGeneration": "I",
+			"cssClass": "battle-items-x-defense"
+		},
+		{
+			"name": "X Sp. Atk",
+			"category": "Battle Items",
+			"description": "An item that raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+			"buyPrice": 350,
+			"sellPrice": 175,
+			"debutGeneration": "IV",
+			"cssClass": "battle-items-x-sp-atk"
+		},
+		{
+			"name": "X Sp. Def",
+			"category": "Battle Items",
+			"description": "An item that raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+			"buyPrice": 350,
+			"sellPrice": 175,
+			"debutGeneration": "IV",
+			"cssClass": "battle-items-x-sp-def"
+		},
+		{
+			"name": "X Speed",
+			"category": "Battle Items",
+			"description": "An item that raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.",
+			"buyPrice": 350,
+			"sellPrice": 175,
+			"debutGeneration": "I",
+			"cssClass": "battle-items-x-speed"
+		},
+		{
+			"name": "Air Mail",
+			"category": "Mail",
+			"description": "Stationery featuring a print of colorful letter sets. Let a Pokémon hold it for delivery.",
+			"buyPrice": 50,
+			"sellPrice": 25,
+			"debutGeneration": "IV",
+			"cssClass": "mail-air-mail"
+		},
+		{
+			"name": "Bridge Mail D",
+			"category": "Mail",
+			"description": "Stationery featuring a print of a red drawbridge. Let a Pokémon hold it for use.",
+			"buyPrice": 50,
+			"sellPrice": 25,
+			"debutGeneration": "V",
+			"cssClass": "mail-bridge-mail-d"
+		},
+		{
+			"name": "Bridge Mail M",
+			"category": "Mail",
+			"description": "Stationery featuring a print of an arched bridge. Let a Pokémon hold it for use.",
+			"buyPrice": 50,
+			"sellPrice": 25,
+			"debutGeneration": "V",
+			"cssClass": "mail-bridge-mail-m"
+		},
+		{
+			"name": "Bubble Mail",
+			"category": "Mail",
+			"description": "Stationery featuring a print of a blue world underwater. Let a Pokémon hold it for use.",
+			"buyPrice": 50,
+			"sellPrice": 25,
+			"debutGeneration": "IV",
+			"cssClass": "mail-bubble-mail"
+		},
+		{
+			"name": "Flame Mail",
+			"category": "Mail",
+			"description": "Stationery featuring a print of a print of flames in blazing red. Let a Pokémon hold it for use.",
+			"buyPrice": 50,
+			"sellPrice": 25,
+			"debutGeneration": "IV",
+			"cssClass": "mail-flame-mail"
+		},
+		{
+			"name": "Grass Mail",
+			"category": "Mail",
+			"description": "Stationery featuring a print of a refreshingly green field. Let a Pokémon hold it for use.",
+			"buyPrice": 50,
+			"sellPrice": 25,
+			"debutGeneration": "IV",
+			"cssClass": "mail-grass-mail"
+		},
+		{
+			"name": "Harbor Mail",
+			"category": "Mail",
+			"description": "A Wingull-print Mail to be held by a Pokémon.",
+			"buyPrice": 50,
+			"sellPrice": 25,
+			"debutGeneration": "III",
+			"cssClass": "mail-harbor-mail"
+		},
+		{
+			"name": "Space Mail",
+			"category": "Mail",
+			"description": "Stationery featuring a print the huge expanse of space. Let a Pokémon hold it for use.",
+			"buyPrice": 50,
+			"sellPrice": 25,
+			"debutGeneration": "IV",
+			"cssClass": "mail-space-mail"
+		},
+		{
+			"name": "Wave Mail",
+			"category": "Mail",
+			"description": "A Wailmer-print Mail to be held by a Pokémon.",
+			"buyPrice": 50,
+			"sellPrice": 25,
+			"debutGeneration": "III",
+			"cssClass": "mail-wave-mail"
+		},
+		{
+			"name": "Escape Rope",
+			"category": "Other Items",
+			"description": "A long, durable rope. Use it to escape instantly from a cave or a dungeon.",
+			"buyPrice": 550,
+			"sellPrice": 275,
+			"debutGeneration": "I",
+			"cssClass": "other-items-escape-rope"
+		},
+		{
+			"name": "Honey",
+			"category": "Other Items",
+			"description": "A sweet honey with a lush aroma that attracts wild Pokémon when it is used in grass, caves, or on special trees.",
+			"buyPrice": 100,
+			"sellPrice": 50,
+			"debutGeneration": "IV",
+			"cssClass": "other-items-honey"
+		},
+		{
+			"name": "Max Repel",
+			"category": "Other Items",
+			"description": "An item that prevents weak wild Pokémon from appearing for 250 steps after its use.",
+			"buyPrice": 700,
+			"sellPrice": 350,
+			"debutGeneration": "I",
+			"cssClass": "other-items-max-repel"
+		},
+		{
+			"name": "Repel",
+			"category": "Other Items",
+			"description": "An item that prevents weak wild Pokémon from appearing for 100 steps after its use.",
+			"buyPrice": 350,
+			"sellPrice": 175,
+			"debutGeneration": "I",
+			"cssClass": "other-items-repel"
+		},
+		{
+			"name": "Super Repel",
+			"category": "Other Items",
+			"description": "An item that prevents weak wild Pokémon from appearing for 200 steps after its use.",
+			"buyPrice": 500,
+			"sellPrice": 250,
+			"debutGeneration": "I",
+			"cssClass": "other-items-super-repel"
+		},
+		{
+			"name": "Poké Doll",
+			"category": "Other Items",
+			"description": "A doll that attracts Pokémon. Use it to flee from any battle with a wild Pokémon.",
+			"buyPrice": 1000,
+			"sellPrice": 500,
+			"debutGeneration": "I",
+			"cssClass": "other-items-poke-doll"
+		},
+		{
+			"name": "Antidote",
+			"category": "Recovery Items",
+			"description": "A spray-type medicine. It lifts the effect of poison from one Pokémon.",
+			"buyPrice": 100,
+			"sellPrice": 50,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-antidote"
+		},
+		{
+			"name": "Awakening",
+			"category": "Recovery Items",
+			"description": "A spray-type medicine. It awakens a Pokémon from the clutches of sleep.",
+			"buyPrice": 200,
+			"sellPrice": 100,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-awakening"
+		},
+		{
+			"name": "Burn Heal",
+			"category": "Recovery Items",
+			"description": "A spray-type medicine. It heals a single Pokémon that is suffering from a burn.",
+			"buyPrice": 250,
+			"sellPrice": 125,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-burn-heal"
+		},
+		{
+			"name": "Fresh Water",
+			"category": "Recovery Items",
+			"description": "Water with a high mineral content. It restores the HP of one Pokémon by 50 points.",
+			"buyPrice": 200,
+			"sellPrice": 100,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-fresh-water"
+		},
+		{
+			"name": "Full Heal",
+			"category": "Recovery Items",
+			"description": "A spray-type medicine. It heals all the status problems of a single Pokémon.",
+			"buyPrice": 600,
+			"sellPrice": 300,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-full-heal"
+		},
+		{
+			"name": "Full Restore",
+			"category": "Recovery Items",
+			"description": "A medicine that fully restores the HP and heals any status problems of a single Pokémon.",
+			"buyPrice": 3000,
+			"sellPrice": 1500,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-full-restore"
+		},
+		{
+			"name": "Hyper Potion",
+			"category": "Recovery Items",
+			"description": "A spray-type medicine for treating wounds. It can be used to restore 120 HP to an injured Pokémon.",
+			"buyPrice": 1500,
+			"sellPrice": 750,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-hyper-potion"
+		},
+		{
+			"name": "Ice Heal",
+			"category": "Recovery Items",
+			"description": "A spray-type medicine. It defrosts a Pokémon that has been frozen solid.",
+			"buyPrice": 250,
+			"sellPrice": 125,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-ice-heal"
+		},
+		{
+			"name": "Lemonade",
+			"category": "Recovery Items",
+			"description": "A very sweet drink. It restores the HP of one Pokémon by 80 points",
+			"buyPrice": 350,
+			"sellPrice": 175,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-lemonade"
+		},
+		{
+			"name": "Max Potion",
+			"category": "Recovery Items",
+			"description": "A spray-type medicine for wounds. It completely restores the HP of a single Pokémon.",
+			"buyPrice": 2500,
+			"sellPrice": 1250,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-max-potion"
+		},
+		{
+			"name": "Moomoo Milk",
+			"category": "Recovery Items",
+			"description": "Milk with a very high nutrition content. It restores the HP of one Pokémon by 100 points.",
+			"buyPrice": 500,
+			"sellPrice": 250,
+			"debutGeneration": "II",
+			"cssClass": "recovery-items-moomoo-milk"
+		},
+		{
+			"name": "Paralyze Heal",
+			"category": "Recovery Items",
+			"description": "A spray-type medicine. It eliminates paralysis from a single Pokémon.",
+			"buyPrice": 200,
+			"sellPrice": 100,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-paralyze-heal"
+		},
+		{
+			"name": "Potion",
+			"category": "Recovery Items",
+			"description": "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points.",
+			"buyPrice": 300,
+			"sellPrice": 150,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-potion"
+		},
+		{
+			"name": "Revive",
+			"category": "Recovery Items",
+			"description": "A medicine that revives a fainted Pokémon. It restores half the Pokémon's maximum HP.",
+			"buyPrice": 1500,
+			"sellPrice": 750,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-revive"
+		},
+		{
+			"name": "Super Potion",
+			"category": "Recovery Items",
+			"description": "A spray-type medicine for wounds. It restores the HP of one Pokémon by 50 points.",
+			"buyPrice": 700,
+			"sellPrice": 350,
+			"debutGeneration": "I",
+			"cssClass": "recovery-items-super-potion"
+		},
+		{
+			"name": "Calcium",
+			"category": "Vitamins",
+			"description": "A nutritious drink for Pokémon. It raises the base Sp. Atk (Special Attack) stat of a single Pokémon.",
+			"buyPrice": 9800,
+			"sellPrice": 4900,
+			"debutGeneration": "I",
+			"cssClass": "vitamins-calcium"
+		},
+		{
+			"name": "Carbos",
+			"category": "Vitamins",
+			"description": "A nutritious drink for Pokémon. It raises the base Speed stat of a single Pokémon.",
+			"buyPrice": 9800,
+			"sellPrice": 4900,
+			"debutGeneration": "I",
+			"cssClass": "vitamins-carbos"
+		},
+		{
+			"name": "HP Up",
+			"category": "Vitamins",
+			"description": "A nutritious drink for Pokémon. It raises the base HP of a single Pokémon.",
+			"buyPrice": 9800,
+			"sellPrice": 4900,
+			"debutGeneration": "I",
+			"cssClass": "vitamins-hp-up"
+		},
+		{
+			"name": "Iron",
+			"category": "Vitamins",
+			"description": "A nutritious drink for Pokémon. It raises the base Defense stat of a single Pokémon.",
+			"buyPrice": 9800,
+			"sellPrice": 4900,
+			"debutGeneration": "I",
+			"cssClass": "vitamins-iron"
+		},
+		{
+			"name": "Protein",
+			"category": "Vitamins",
+			"description": "A nutritious drink for Pokémon. It raises the base Attack stat of a single Pokémon.",
+			"buyPrice": 9800,
+			"sellPrice": 4900,
+			"debutGeneration": "I",
+			"cssClass": "vitamins-protein"
+		},
+		{
+			"name": "Zinc",
+			"category": "Vitamins",
+			"description": "A nutritious drink for Pokémon. It raises the base Sp. Def (Special Defense) stat of a single Pokémon.",
+			"buyPrice": 9800,
+			"sellPrice": 4900,
+			"debutGeneration": "III",
+			"cssClass": "vitamins-zinc"
+		}
+	]
+}

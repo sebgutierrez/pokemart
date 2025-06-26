@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider        = "prisma-client-js"
   previewFeatures = ["driverAdapters"]
@@ -36,8 +33,8 @@ model Trainer {
 model ItemBag {
   id        Int     @id @default(autoincrement())
   quantity  Int
-  item      Item    @relation(fields: [itemId], references: [id])
   itemId    Int
-  trainer   Trainer @relation(fields: [trainerId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   trainerId Int     @unique
+  trainer   Trainer @relation(fields: [trainerId], references: [id], onDelete: Cascade)
+  item      Item    @relation(fields: [itemId], references: [id])
 }

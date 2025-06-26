@@ -3,12 +3,11 @@ import { PrismaClient } from '@prisma/client';
 
 const prismaClientSingleton = () => {
   const adapter = new PrismaBetterSQLite3({
-    url: "file:../../prisma/dev.db"
+    url: process.env.PRISMA_DB_URL
   });
   return new PrismaClient({ adapter });
 };
 
-// Singleton pattern avoid hot reloading issues in development mode: https://www.robinwieruch.de/next-prisma-sqlite/
 declare const globalThis: {
   prismaGlobal: ReturnType<typeof prismaClientSingleton>;
 } & typeof global;
