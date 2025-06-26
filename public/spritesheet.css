@@ -6,7 +6,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: 0px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-dusk {
 	 display: inline-block;
@@ -16,7 +16,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -64px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-great {
 	 display: inline-block;
@@ -26,7 +26,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -128px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-heal {
 	 display: inline-block;
@@ -36,7 +36,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -192px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-luxury {
 	 display: inline-block;
@@ -46,7 +46,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -256px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-nest {
 	 display: inline-block;
@@ -56,7 +56,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -320px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-net {
 	 display: inline-block;
@@ -66,7 +66,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -384px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-poke {
 	 display: inline-block;
@@ -76,7 +76,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -448px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-quick {
 	 display: inline-block;
@@ -86,7 +86,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -512px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-repeat {
 	 display: inline-block;
@@ -96,7 +96,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -576px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-timer {
 	 display: inline-block;
@@ -106,7 +106,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -640px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-ball-ultra {
 	 display: inline-block;
@@ -116,9 +116,9 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -704px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
- .pkspr-battle-effect-dire-hit {
+ .pkspr-battle-items-dire-hit {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
@@ -126,9 +126,9 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -768px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
- .pkspr-battle-effect-guard-spec {
+ .pkspr-battle-items-guard-spec {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
@@ -136,9 +136,9 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -832px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
- .pkspr-battle-effect-x-accuracy {
+ .pkspr-battle-items-x-accuracy {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
@@ -146,9 +146,9 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -896px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
- .pkspr-battle-effect-x-attack {
+ .pkspr-battle-items-x-attack {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
@@ -156,9 +156,9 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -960px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
- .pkspr-battle-effect-x-defense {
+ .pkspr-battle-items-x-defense {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
@@ -166,9 +166,9 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -1024px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
- .pkspr-battle-effect-x-sp-atk {
+ .pkspr-battle-items-x-sp-atk {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
@@ -176,9 +176,9 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -1088px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
- .pkspr-battle-effect-x-sp-def {
+ .pkspr-battle-items-x-sp-def {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
@@ -186,9 +186,9 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -1152px 0px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
- .pkspr-battle-effect-x-speed {
+ .pkspr-battle-items-x-speed {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
@@ -196,267 +196,7 @@
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -1216px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-aspear {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1280px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-babiri {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1344px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-charti {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1408px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-cheri {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1472px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-chesto {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1536px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-chilan {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1600px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-chople {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1664px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-coba {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1728px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-colbur {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1792px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-haban {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1856px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-kasib {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1920px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-kebia {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1984px 0px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-leppa {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: 0px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-lum {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -64px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-occa {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -128px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-oran {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -192px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-passho {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -256px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-payapa {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -320px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-pecha {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -384px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-rawst {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -448px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-rindo {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -512px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-shuca {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -576px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-sitrus {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -640px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-tanga {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -704px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-wacan {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -768px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-berry-yache {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -832px -64px;
-	 background-size: 2048px 192px;
+	 background-size: 2048px 128px;
 }
  .pkspr-mail-air-mail {
 	 display: inline-block;
@@ -465,8 +205,8 @@
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -896px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1280px 0px;
+	 background-size: 2048px 128px;
 }
  .pkspr-mail-bridge-mail-d {
 	 display: inline-block;
@@ -475,8 +215,8 @@
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -960px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1344px 0px;
+	 background-size: 2048px 128px;
 }
  .pkspr-mail-bridge-mail-m {
 	 display: inline-block;
@@ -485,8 +225,8 @@
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1024px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1408px 0px;
+	 background-size: 2048px 128px;
 }
  .pkspr-mail-bubble-mail {
 	 display: inline-block;
@@ -495,8 +235,8 @@
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1088px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1472px 0px;
+	 background-size: 2048px 128px;
 }
  .pkspr-mail-flame-mail {
 	 display: inline-block;
@@ -505,8 +245,8 @@
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1152px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1536px 0px;
+	 background-size: 2048px 128px;
 }
  .pkspr-mail-grass-mail {
 	 display: inline-block;
@@ -515,18 +255,8 @@
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1216px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-mail-harbor-mail {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1280px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1600px 0px;
+	 background-size: 2048px 128px;
 }
  .pkspr-mail-space-mail {
 	 display: inline-block;
@@ -535,18 +265,8 @@
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1344px -64px;
-	 background-size: 2048px 192px;
-}
- .pkspr-mail-tropic-mail {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1408px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1664px 0px;
+	 background-size: 2048px 128px;
 }
  .pkspr-mail-wave-mail {
 	 display: inline-block;
@@ -555,326 +275,277 @@
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1472px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1728px 0px;
+	 background-size: 2048px 128px;
 }
- .pkspr-other-item-escape-rope {
+ .pkspr-other-items-escape-rope {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1536px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1792px 0px;
+	 background-size: 2048px 128px;
 }
- .pkspr-other-item-honey {
+ .pkspr-other-items-honey {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1600px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1856px 0px;
+	 background-size: 2048px 128px;
 }
- .pkspr-other-item-max-repel {
+ .pkspr-other-items-max-repel {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1664px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1920px 0px;
+	 background-size: 2048px 128px;
 }
- .pkspr-other-item-poke-doll {
+ .pkspr-other-items-poke-doll {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1728px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -1984px 0px;
+	 background-size: 2048px 128px;
 }
- .pkspr-other-item-repel {
+ .pkspr-other-items-repel {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1792px -64px;
-	 background-size: 2048px 192px;
+	 background-position: 0px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-other-item-super-repel {
+ .pkspr-other-items-super-repel {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1856px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -64px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-antidote {
+ .pkspr-recovery-items-antidote {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1920px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -128px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-awakening {
+ .pkspr-recovery-items-awakening {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1984px -64px;
-	 background-size: 2048px 192px;
+	 background-position: -192px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-burn-heal {
+ .pkspr-recovery-items-burn-heal {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: 0px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -256px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-elixir {
+ .pkspr-recovery-items-fresh-water {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -64px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -320px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-ether {
+ .pkspr-recovery-items-full-heal {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -128px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -384px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-fresh-water {
+ .pkspr-recovery-items-full-restore {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -192px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -448px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-full-heal {
+ .pkspr-recovery-items-hyper-potion {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -256px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -512px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-full-restore {
+ .pkspr-recovery-items-ice-heal {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -320px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -576px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-hyper-potion {
+ .pkspr-recovery-items-lemonade {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -384px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -640px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-ice-heal {
+ .pkspr-recovery-items-max-potion {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -448px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -704px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-lemonade {
+ .pkspr-recovery-items-moomoo-milk {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -512px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -768px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-max-potion {
+ .pkspr-recovery-items-paralyze-heal {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -576px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -832px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-max-revive {
+ .pkspr-recovery-items-potion {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -640px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -896px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-moomoo-milk {
+ .pkspr-recovery-items-revive {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -704px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -960px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-paralyze-heal {
+ .pkspr-recovery-items-super-potion {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -768px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -1024px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-potion {
+ .pkspr-vitamins-calcium {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -832px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -1088px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-revive {
+ .pkspr-vitamins-carbos {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -896px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -1152px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-recovery-super-potion {
+ .pkspr-vitamins-hp-up {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -960px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -1216px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-stat-item-calcium {
+ .pkspr-vitamins-iron {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1024px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -1280px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-stat-item-carbos {
+ .pkspr-vitamins-protein {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1088px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -1344px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-stat-item-hp-up {
+ .pkspr-vitamins-zinc {
 	 display: inline-block;
 	 width: 64px;
 	 height: 64px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1152px -128px;
-	 background-size: 2048px 192px;
+	 background-position: -1408px -64px;
+	 background-size: 2048px 128px;
 }
- .pkspr-stat-item-iron {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1216px -128px;
-	 background-size: 2048px 192px;
-}
- .pkspr-stat-item-pp-max {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1280px -128px;
-	 background-size: 2048px 192px;
-}
- .pkspr-stat-item-pp-up {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1344px -128px;
-	 background-size: 2048px 192px;
-}
- .pkspr-stat-item-protein {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1408px -128px;
-	 background-size: 2048px 192px;
-}
- .pkspr-stat-item-zinc {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1472px -128px;
-	 background-size: 2048px 192px;
-}
+ 

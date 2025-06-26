@@ -6,15 +6,16 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prisma-seed": "tsx prisma/dev-seed.ts"
+    "lint": "next lint"
+  },
+  "prisma": {
+    "seed": "tsx ./prisma/dev-seed.ts"
   },
   "dependencies": {
     "@prisma/adapter-better-sqlite3": "^6.10.1",
     "@prisma/client": "^6.10.1",
     "better-sqlite3": "^11.9.0",
     "next": "15.3.4",
-    "pikasprite": "^1.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -28,6 +29,7 @@
     "eslint-config-next": "15.3.4",
     "prisma": "^6.10.1",
     "tailwindcss": "^4",
+    "tsx": "^4.20.3",
     "typescript": "^5"
   }
 }
