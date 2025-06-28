@@ -1,551 +1,496 @@
 .pkspr-ball-dive {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: 0px 0px;
-	 background-size: 2048px 128px;
 }
  .pkspr-ball-dusk {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -32px 0px;
+}
+ .pkspr-ball-great {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -64px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-ball-great {
+ .pkspr-ball-heal {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -96px 0px;
+}
+ .pkspr-ball-luxury {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -128px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-ball-heal {
+ .pkspr-ball-nest {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -160px 0px;
+}
+ .pkspr-ball-net {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -192px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-ball-luxury {
+ .pkspr-ball-poke {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -224px 0px;
+}
+ .pkspr-ball-quick {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -256px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-ball-nest {
+ .pkspr-ball-repeat {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -288px 0px;
+}
+ .pkspr-ball-timer {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -320px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-ball-net {
+ .pkspr-ball-ultra {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -352px 0px;
+}
+ .pkspr-battle-items-dire-hit {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -384px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-ball-poke {
+ .pkspr-battle-items-guard-spec {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -416px 0px;
+}
+ .pkspr-battle-items-x-accuracy {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -448px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-ball-quick {
+ .pkspr-battle-items-x-attack {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -480px 0px;
+}
+ .pkspr-battle-items-x-defense {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -512px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-ball-repeat {
+ .pkspr-battle-items-x-sp-atk {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -544px 0px;
+}
+ .pkspr-battle-items-x-sp-def {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -576px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-ball-timer {
+ .pkspr-battle-items-x-speed {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -608px 0px;
+}
+ .pkspr-mail-air-mail {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -640px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-ball-ultra {
+ .pkspr-mail-bridge-mail-d {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -672px 0px;
+}
+ .pkspr-mail-bridge-mail-m {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -704px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-battle-items-dire-hit {
+ .pkspr-mail-bubble-mail {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -736px 0px;
+}
+ .pkspr-mail-flame-mail {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -768px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-battle-items-guard-spec {
+ .pkspr-mail-grass-mail {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -800px 0px;
+}
+ .pkspr-mail-space-mail {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -832px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-battle-items-x-accuracy {
+ .pkspr-mail-wave-mail {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -864px 0px;
+}
+ .pkspr-other-items-escape-rope {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -896px 0px;
-	 background-size: 2048px 128px;
 }
- .pkspr-battle-items-x-attack {
+ .pkspr-other-items-honey {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
+	 background-image: url(./spritesheet-32x32.png);
+	 image-rendering: pixelated;
+	 image-rendering: crisp-edges;
+	 background-position: -928px 0px;
+}
+ .pkspr-other-items-max-repel {
+	 display: inline-block;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
 	 background-position: -960px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-battle-items-x-defense {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1024px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-battle-items-x-sp-atk {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1088px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-battle-items-x-sp-def {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1152px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-battle-items-x-speed {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1216px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-mail-air-mail {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1280px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-mail-bridge-mail-d {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1344px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-mail-bridge-mail-m {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1408px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-mail-bubble-mail {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1472px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-mail-flame-mail {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1536px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-mail-grass-mail {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1600px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-mail-space-mail {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1664px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-mail-wave-mail {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1728px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-other-items-escape-rope {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1792px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-other-items-honey {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1856px 0px;
-	 background-size: 2048px 128px;
-}
- .pkspr-other-items-max-repel {
-	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
-	 background-image: url(./spritesheet-32x32.png);
-	 image-rendering: pixelated;
-	 image-rendering: crisp-edges;
-	 background-position: -1920px 0px;
-	 background-size: 2048px 128px;
 }
  .pkspr-other-items-poke-doll {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1984px 0px;
-	 background-size: 2048px 128px;
+	 background-position: -992px 0px;
 }
  .pkspr-other-items-repel {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: 0px -64px;
-	 background-size: 2048px 128px;
+	 background-position: 0px -32px;
 }
  .pkspr-other-items-super-repel {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -64px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -32px -32px;
 }
  .pkspr-recovery-items-antidote {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -128px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -64px -32px;
 }
  .pkspr-recovery-items-awakening {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -192px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -96px -32px;
 }
  .pkspr-recovery-items-burn-heal {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -256px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -128px -32px;
 }
  .pkspr-recovery-items-fresh-water {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -320px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -160px -32px;
 }
  .pkspr-recovery-items-full-heal {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -384px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -192px -32px;
 }
  .pkspr-recovery-items-full-restore {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -448px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -224px -32px;
 }
  .pkspr-recovery-items-hyper-potion {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -512px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -256px -32px;
 }
  .pkspr-recovery-items-ice-heal {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -576px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -288px -32px;
 }
  .pkspr-recovery-items-lemonade {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -640px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -320px -32px;
 }
  .pkspr-recovery-items-max-potion {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -704px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -352px -32px;
 }
  .pkspr-recovery-items-moomoo-milk {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -768px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -384px -32px;
 }
  .pkspr-recovery-items-paralyze-heal {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -832px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -416px -32px;
 }
  .pkspr-recovery-items-potion {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -896px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -448px -32px;
 }
  .pkspr-recovery-items-revive {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -960px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -480px -32px;
 }
  .pkspr-recovery-items-super-potion {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1024px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -512px -32px;
 }
  .pkspr-vitamins-calcium {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1088px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -544px -32px;
 }
  .pkspr-vitamins-carbos {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1152px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -576px -32px;
 }
  .pkspr-vitamins-hp-up {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1216px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -608px -32px;
 }
  .pkspr-vitamins-iron {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1280px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -640px -32px;
 }
  .pkspr-vitamins-protein {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1344px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -672px -32px;
 }
  .pkspr-vitamins-zinc {
 	 display: inline-block;
-	 width: 64px;
-	 height: 64px;
+	 width: 32px;
+	 height: 32px;
 	 background-image: url(./spritesheet-32x32.png);
 	 image-rendering: pixelated;
 	 image-rendering: crisp-edges;
-	 background-position: -1408px -64px;
-	 background-size: 2048px 128px;
+	 background-position: -704px -32px;
 }
  

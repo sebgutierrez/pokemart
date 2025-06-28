@@ -2,7 +2,7 @@
 	"items": [
 		{
 			"name": "Dive Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A somewhat different Poké Ball that works especially well on Pokémon that live in the sea.",
 			"buyPrice": 1000,
 			"sellPrice": 500,
@@ -11,7 +11,7 @@
 		},
 		{
 			"name": "Dusk Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A somewhat different Poké Ball that makes it easier to catch wild Pokémon at night or in dark places like caves.",
 			"buyPrice": 1000,
 			"sellPrice": 500,
@@ -20,7 +20,7 @@
 		},
 		{
 			"name": "Great Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A good, high-performance Ball that provides a higher Pokémon catch rate than a standard Poké Ball.",
 			"buyPrice": 600,
 			"sellPrice": 300,
@@ -29,7 +29,7 @@
 		},
 		{
 			"name": "Heal Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A remedial Poké Ball that restores the caught Pokémon's HP and eliminates any status problem.",
 			"buyPrice": 300,
 			"sellPrice": 150,
@@ -38,7 +38,7 @@
 		},
 		{
 			"name": "Luxury Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly.",
 			"buyPrice": 1000,
 			"sellPrice": 500,
@@ -47,7 +47,7 @@
 		},
 		{
 			"name": "Nest Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A somewhat different Poké Ball that works especially well on weaker Pokémon in the wild.",
 			"buyPrice": 1000,
 			"sellPrice": 500,
@@ -56,7 +56,7 @@
 		},
 		{
 			"name": "Net Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A somewhat different Poké Ball that works especially well on Water- and Bug-type Pokémon.",
 			"buyPrice": 1000,
 			"sellPrice": 500,
@@ -65,16 +65,16 @@
 		},
 		{
 			"name": "Poké Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A device for catching wild Pokémon. It is thrown like a ball at the target. It is designed as a capsule system.",
 			"buyPrice": 200,
 			"sellPrice": 100,
 			"debutGeneration": "I",
-			"cssClass": "ball-poke"
+			"cssClass": "ball-Poké"
 		},
 		{
 			"name": "Quick Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A somewhat different Poké Ball that has a more successful catch rate if used at the start of a wild encounter.",
 			"buyPrice": 1000,
 			"sellPrice": 500,
@@ -83,7 +83,7 @@
 		},
 		{
 			"name": "Repeat Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A somewhat different Poké Ball that works especially well on Pokémon species that were previously caught.",
 			"buyPrice": 1000,
 			"sellPrice": 500,
@@ -92,7 +92,7 @@
 		},
 		{
 			"name": "Timer Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "A somewhat different Ball that becomes progressively better the more turns there are in a battle.",
 			"buyPrice": 1000,
 			"sellPrice": 500,
@@ -101,7 +101,7 @@
 		},
 		{
 			"name": "Ultra Ball",
-			"category": "Poké Ball",
+			"category": "Poké Balls",
 			"description": "An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball.",
 			"buyPrice": 1200,
 			"sellPrice": 600,
@@ -313,7 +313,7 @@
 			"buyPrice": 1000,
 			"sellPrice": 500,
 			"debutGeneration": "I",
-			"cssClass": "other-items-poke-doll"
+			"cssClass": "other-items-Poké-doll"
 		},
 		{
 			"name": "Antidote",
@@ -510,28 +510,28 @@
 			"username": "Red",
 			"password": "$2y$10$HbpzcW7wXq294lvuzYi5VeKvIgXfu1sqRY2BX/kTu8ziXOVlyQ7Ma",
 			"region": "Kanto",
-			"pokeDollars": 1000,
+			"PokéDollars": 1000,
 			"createdAt": "2025-06-26T00:00:00.000Z"
 		},
 		{
 			"username": "Gold",
 			"password": "$2y$10$NSWGYlnT0zunDFMoz/iBkeBBE36yFs5qD2PI9.cKeLYSwY7WsUWwm",
 			"region": "Johto",
-			"pokeDollars": 500,
+			"PokéDollars": 500,
 			"createdAt": "2025-06-27T00:00:00.000Z"
 		},
 		{
 			"username": "Silver",
 			"password": "$2y$10$SfmtrRM.fnbORAHJNnenxe8l2ka9VQ.if4W3pVlzBsE1lBMv9L.H6",
 			"region": "Johto",
-			"pokeDollars": 500,
+			"PokéDollars": 500,
 			"createdAt": "2025-06-28T00:00:00.000Z"
 		},
 		{
 			"username": "Crystal",
 			"password": "$2y$10$QhxGT8ZvzKM.eu2e6uSMmuZ1LfgFiw2ex66419p/7ETGKUl5Qcqpu",
 			"region": "Johto",
-			"pokeDollars": 500,
+			"PokéDollars": 500,
 			"createdAt": "2025-06-29T00:00:00.000Z"
 		}
 	],
