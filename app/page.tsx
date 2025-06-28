@@ -1,7 +1,4 @@
-import "../public/spritesheet-32x32.css"
 import Link from 'next/link';
-
-import ItemShop from './ui/ItemShop';
 
 const Home = () => {
   return (
@@ -24,7 +21,6 @@ const Home = () => {
           </ul>
         </header>
       </div>
-      <ItemShop />
     </div>
   );
 };

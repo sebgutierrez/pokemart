@@ -23,3 +23,8 @@ export type ItemContainerProps = {
 export type ItemDisplayProps = {
 	item: Item
 }
+
+export type PaginationButtonProps = {
+	pagination: Pagination,
+	onPageChange: (page: number) => void
+}

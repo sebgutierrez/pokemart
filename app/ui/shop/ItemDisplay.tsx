@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { ItemDisplayProps } from "./types/items";
+import { ItemDisplayProps } from "../types/shop";
 
 const ItemDisplay = ({ item }: ItemDisplayProps) => {
 	return (
