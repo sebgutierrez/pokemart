@@ -19,7 +19,7 @@ const Shop = () => {
   })
   const [pagination, setPagination] = useState({
     currentPage: 1,
-    perPage: 10,
+    perPage: 4,
     totalCount: 0
   })
   const itemsQueryConditions = useRef({

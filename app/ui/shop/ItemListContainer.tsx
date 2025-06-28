@@ -1,8 +1,7 @@
 "use client";
 import React from 'react';
 import { Item, ItemContainerProps } from "../types/shop";
-import PrevPageButton from './PrevPageButton';
-import NextPageButton from './NextPageButton';
+import Pagination from './Pagination';
 
 const ItemContainer = ({ items, onSelectItem, pagination, setPagination }: ItemContainerProps) => {
 
@@ -39,8 +38,7 @@ const ItemContainer = ({ items, onSelectItem, pagination, setPagination }: ItemC
         { listItems }
       </ul>
       <div className="flex">
-        <PrevPageButton pagination={pagination} onPageChange={onPageChange}/>
-        <NextPageButton pagination={pagination} onPageChange={onPageChange}/>
+        <Pagination pagination={pagination} onPageChange={onPageChange}/>
       </div>
     </div>
   );
