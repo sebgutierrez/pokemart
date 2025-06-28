@@ -3,10 +3,10 @@ import  { prisma } from './prisma-client';
 
 type ItemQueryParams = {
 	where: Prisma.ItemWhereInput
-	orderBy: Prisma.ItemOrderByWithRelationInput[] 
+	orderBy: Prisma.ItemOrderByWithRelationInput
 }
 
-export async function getItems(queryParams: ItemQueryParams) {
+export async function getItems(query: ItemQueryParams) {
 	let items
 	try {
 		items = prisma.item.findMany({
@@ -19,11 +19,11 @@ export async function getItems(queryParams: ItemQueryParams) {
 				buyPrice: true,	
 			},
 			where: {
-				...queryParams.where
+				...query.where
 			},
-			orderBy: [
-				...queryParams.orderBy,
-			]
+			orderBy: {
+				...query.orderBy,
+			}
 		})
 	} catch (error) {
 		throw new Error("Failed to fetch items.")

@@ -1,15 +1,8 @@
 "use client";
 import React, { useState, useRef } from 'react';
 import ItemContainer from './ItemContainer';
-
-type Item = {
-  name: string,
-  category: string,
-  description: string,
-  buyPrice: string,
-  debutGeneration: string,
-  cssClass: string
-}
+import ItemDisplay from './ItemDisplay';
+import { Item } from "./types/items";
 
 const ItemShop = () => {
   const [items, setItems] = useState([])
@@ -22,10 +15,14 @@ const ItemShop = () => {
     debutGeneration: "",
     cssClass: ""
   })
-  const categoryAndSortOptions = useRef({
+  const [pagination, setPagination] = useState({
+    currentPage: 1,
+    perPage: 10,
+    totalCount: 0
+  })
+  const itemsQueryConditions = useRef({
     category: "",
-    name: "",
-    price: ""
+    sort: ""
   })
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>){
@@ -37,28 +34,39 @@ const ItemShop = () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        "category": categoryAndSortOptions.current.category,
-        "name": categoryAndSortOptions.current.name,
-        "price": categoryAndSortOptions.current.price
+        "category": itemsQueryConditions.current.category,
+        "sort": itemsQueryConditions.current.sort
       }),
     });
     if(response.ok){
       const items = await response.json()
       setItems(items)
-      setSelectedItem({
-        ...items[0]
+      setSelectedItem({...items[0]})
+      setPagination({
+        ...pagination,
+        currentPage: 1,
+        totalCount: items.length
       })
     }
     setLoading(false)
   }
 
-  async function onCategoryAndSortChange(e: React.ChangeEvent<HTMLSelectElement>){
+  async function onSelectChange(e: React.ChangeEvent<HTMLSelectElement>){
     e.preventDefault()
     // Don't store the empty option
     if(e.target.selectedIndex != 0){
-      categoryAndSortOptions.current = {
-        ...categoryAndSortOptions.current,
-        [e.target.name]: e.target.options[e.target.selectedIndex].value
+      const select = e.target.name
+      if(select === "category-select"){
+        itemsQueryConditions.current = {
+          ...itemsQueryConditions.current,
+          category: e.target.options[e.target.selectedIndex].value
+        }
+      } 
+      if(select === "sort-select"){
+        itemsQueryConditions.current = {
+          ...itemsQueryConditions.current,
+          sort: e.target.options[e.target.selectedIndex].value
+        }
       }
     }
   }
@@ -74,9 +82,9 @@ const ItemShop = () => {
           <div className="flex">
             <div className="border-2 border-black">
               <select 
-                name="category" 
+                name="category-select" 
                 id="category-select" 
-                onChange={onCategoryAndSortChange}
+                onChange={onSelectChange}
               >
                 <option value="">Category</option>
                 <option value="Poké Ball">Poké Ball</option>
@@ -88,24 +96,15 @@ const ItemShop = () => {
             </div>
             <div className="border-2 border-black">
               <select 
-                name="name" 
-                id="name-select"
-                onChange={onCategoryAndSortChange}
+                name="sort-select" 
+                id="sort-select"
+                onChange={onSelectChange}
               >
-                <option value="">Name</option>
-                <option value="asc">Name (A-Z)</option>
-                <option value="desc">Name (Z-A)</option>
-              </select>
-            </div>
-            <div className="border-2 border-black">
-              <select 
-                name="price" 
-                id="price-select"
-                onChange={onCategoryAndSortChange}
-              >
-                <option value="">Price</option>
-                <option value="asc">Price (Low to High)</option>
-                <option value="desc">Price (High to Low)</option>
+                <option value="">Sort By</option>
+                <option value="name-asc">Name (A-Z)</option>
+                <option value="name-desc">Name (Z-A)</option>
+                <option value="buyPrice-asc">Price (Low to High)</option>
+                <option value="buyPrice-desc">Price (High to Low)</option>
               </select>
             </div>
           </div> 
@@ -113,30 +112,10 @@ const ItemShop = () => {
             Search
           </button>
         </form>
-        <div className="flex">
-
-        </div>
       </div>
       <div className="flex mx-12">
-        { !loading && <ItemContainer items={items} onSelectItem={onSelectItem}></ItemContainer> }
-        { !loading && (
-          <div className="flex w-full gap-x-4 border-2 border-red-500 px-8 py-4">
-            <div className="w-full flex flex-col border-black rounded-md">
-              <div className="w-full border-2 border-black pl-2 py-3 rounded-lg">{selectedItem.name}</div>
-              <div className="border-2 border-black flex justify-center items-center">
-                <div className="relative w-[60px] h-[60px] pl-[12px] pt-[12px] border-2 border-black rounded-full">
-                  <div className={"pkspr-" + selectedItem.cssClass + " scale-200"}></div>
-                </div>
-              </div>
-              <div className="border-2 border-black">
-                <div className="">{selectedItem.description}</div>
-                <div className="">{selectedItem.category}</div>
-                <div className="">{selectedItem.debutGeneration}</div>
-                <div className="">{selectedItem.buyPrice}</div>
-              </div>
-            </div>
-          </div>
-        )}
+        { !loading && <ItemContainer items={items} onSelectItem={onSelectItem} pagination={pagination} setPagination={setPagination}></ItemContainer> }
+        { !loading && <ItemDisplay item={selectedItem} /> }
       </div>
     </div>
 	)
