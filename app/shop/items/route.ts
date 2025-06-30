@@ -8,11 +8,11 @@ export async function POST(request: Request) {
 	const formData = await request.json();
 	const categoryValue = formData.category
 	if(!categoryValue){
-		Response.json({ error: "No category was submitted" })
+		return Response.json({ error: "No category was submitted" })
 	}
 	let query
 	if(!categorySelectOptions.includes(categoryValue)){
-		Response.json({ error: "Invalid category" })
+		return Response.json({ error: "Invalid category" })
 	} else {
 		query = {
 			where: {
@@ -22,7 +22,7 @@ export async function POST(request: Request) {
 	}
 	const sortValue = formData.sort
 	if(!formData.sort && !sortSelectOptions.includes(sortValue)){
-		Response.json({ error: "Invalid sorting method" })
+		return Response.json({ error: "Invalid sorting method" })
 	} else {
 		const [sortField, sortMethod] = sortValue.split("-")
 		query = {

@@ -3,23 +3,25 @@ import React, { useState, useRef } from 'react';
 
 const signUp = () => {
   const [loading, setLoading] = useState(false)
-  const [errors, setErrors] = useState([])
+  const [errors, setErrors] = useState({
+    username: [],
+    password: []
+  })
   const formData = useRef({
     username: "",
     password: "",
-    "confirm-password": "",
+    confirmPassword: "",
     region: ""
   })
 
-
   async function onSubmit(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault()
-    if(formData.current.password !== formData.current["confirm-password"]){
+    if(formData.current.password !== formData.current.confirmPassword){
       alert("Oh oh! Passwords don't match!")
       return
     }
     setLoading(true)
-    const response = await fetch('/sign-up/sign-up', {
+    const response = await fetch('/auth/sign-up', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -33,7 +35,10 @@ const signUp = () => {
     if(response.ok){
       const responseJSON = await response.json()
       if(responseJSON.error){
-        setErrors(responseJSON.error)
+        setErrors({
+          username: responseJSON.error.username,
+          password: responseJSON.error.password
+        })
       } else {
         alert("Succefully created user!")
       }
@@ -57,13 +62,27 @@ const signUp = () => {
           <label htmlFor="username" className="">Trainer Name</label>
           <input type="text" id="username" name="username" className="border-2" onChange={onInputChange} required></input>
         </div>
+        { 
+          errors?.username?.map((error, index) => {
+            return (
+              <div key={index} className="text-red-400">{error}</div>
+            )
+          }) 
+        }
         <div className="flex flex-col">
           <label htmlFor="password" className="">Password</label>
           <input type="password" id="password" name="password" className="border-2" onChange={onInputChange} required></input>
         </div>
+        { 
+          errors?.password?.map((error, index) => {
+            return (
+              <div key={index} className="text-red-400">{error}</div>
+            )
+          }) 
+        }
         <div className="flex flex-col">
-          <label htmlFor="confirm-password" className="">Confirm Password</label>
-          <input type="password" id="confirm-password" name="confirm-password" className="border-2" onChange={onInputChange} required></input>
+          <label htmlFor="confirmPassword" className="">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" className="border-2" onChange={onInputChange} required></input>
         </div>
         {/* <div className="flex flex-col">
           <label htmlFor="region-select" className="">Region (Optional)</label>

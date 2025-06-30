@@ -17,11 +17,11 @@ export default function RootLayout({
             <li>
               <Link href="/shop">Shop</Link>
             </li>
+            {/* <li>
+              <Link href="/auth">Sign In</Link>
+            </li> */}
             <li>
-              <Link href="/sign-in">Sign In</Link>
-            </li>
-            <li>
-              <Link href="/sign-up">Sign Up</Link>
+              <Link href="/auth">Sign Up</Link>
             </li>
           </ul>
           <div className="border-l-2 pl-2 border-slate-900/10 cursor-pointer">
