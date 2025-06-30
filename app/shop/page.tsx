@@ -19,10 +19,10 @@ const Shop = () => {
   })
   const [pagination, setPagination] = useState({
     currentPage: 1,
-    perPage: 4,
+    perPage: 10,
     totalCount: 0
   })
-  const itemsQueryConditions = useRef({
+  const itemQuery = useRef({
     category: "",
     sort: ""
   })
@@ -36,12 +36,13 @@ const Shop = () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        "category": itemsQueryConditions.current.category,
-        "sort": itemsQueryConditions.current.sort
+        "category": itemQuery.current.category,
+        "sort": itemQuery.current.sort
       }),
     });
     if(response.ok){
-      const items = await response.json()
+      const responseJSON = await response.json()
+      const items = responseJSON.data
       setItems(items)
       setSelectedItem({...items[0]})
       setPagination({
@@ -59,14 +60,14 @@ const Shop = () => {
     if(e.target.selectedIndex != 0){
       const select = e.target.name
       if(select === "category-select"){
-        itemsQueryConditions.current = {
-          ...itemsQueryConditions.current,
+        itemQuery.current = {
+          ...itemQuery.current,
           category: e.target.options[e.target.selectedIndex].value
         }
       } 
       if(select === "sort-select"){
-        itemsQueryConditions.current = {
-          ...itemsQueryConditions.current,
+        itemQuery.current = {
+          ...itemQuery.current,
           sort: e.target.options[e.target.selectedIndex].value
         }
       }
@@ -78,7 +79,7 @@ const Shop = () => {
   }
 
 	return (
-    <div>
+    <div className=""> 
       <div className="flex justify-between">
         <form onSubmit={onSubmit} className="flex">
           <div className="flex">

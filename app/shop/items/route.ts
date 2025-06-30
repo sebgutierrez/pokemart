@@ -1,3 +1,4 @@
+import { Prisma } from '@prisma/client';
 import { getItems } from '../../../prisma/api';
 
 const categorySelectOptions = ["Poké Ball", "Recovery Items", "Battle Items", "Vitamins", "Other Items"]
@@ -7,11 +8,11 @@ export async function POST(request: Request) {
 	const formData = await request.json();
 	const categoryValue = formData.category
 	if(!categoryValue){
-		throw new Error("No category was submitted")
+		Response.json({ error: "No category was submitted" })
 	}
 	let query
 	if(!categorySelectOptions.includes(categoryValue)){
-		throw new Error("Invalid category")
+		Response.json({ error: "Invalid category" })
 	} else {
 		query = {
 			where: {
@@ -21,7 +22,7 @@ export async function POST(request: Request) {
 	}
 	const sortValue = formData.sort
 	if(!formData.sort && !sortSelectOptions.includes(sortValue)){
-		throw new Error("Invalid sorting method")
+		Response.json({ error: "Invalid sorting method" })
 	} else {
 		const [sortField, sortMethod] = sortValue.split("-")
 		query = {
@@ -31,6 +32,6 @@ export async function POST(request: Request) {
 			}
 		}
 	}
-	const items = await getItems(query)
-	return Response.json(items)
+	const items = await getItems(query as Prisma.ItemFindManyArgs)
+	return Response.json({ data: items })
 }
