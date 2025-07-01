@@ -1,4 +1,3 @@
-import { redirect } from 'next/navigation'
 import { fetchTrainerHash } from "../../../prisma/api";
 import { compare } from "bcrypt-ts";
 
@@ -40,7 +39,7 @@ export async function POST(request: Request) {
 	if(!isCorrectPassword){
 		return Response.json({ 
 			error: {
-				password: "Incorrect password" 
+				password: ["Incorrect password"]
 			}
 		})
 	}

@@ -1,11 +1,14 @@
-import { redirect } from 'next/navigation'
 import { signUp } from '../../../prisma/api';
 import { genSalt, hash } from "bcrypt-ts";
+import { cookies } from "next/headers";
+import { getIronSession } from "iron-session";
+import { defaultSession, sessionOptions } from "../../session/util";
+import { SessionData } from "../../session/util";
 
 async function usernameValidator(username: string): Promise<string[]> {
 	let errors = []
-	if(username.length <= 4){
-		errors.push("Trainer name must be longer than 4 characters")
+	if(username.length <= 2){
+		errors.push("Trainer name must be longer than 2 characters")
 	}
 	let unicode, i, len
 	for(i = 0, len = username.length; i < len; i++){
@@ -86,10 +89,19 @@ export async function POST(request: Request) {
 	})
 
 	if(response && response.error){
-		return Response.json({ error: response.error })
+		return Response.json({ 
+			error: {
+				username: [response.error] 
+			}
+		})
 	}
 
-	console.log(response)
+	const session = await getIronSession<SessionData>(await cookies(), sessionOptions)
+
+	session.isLoggedIn = true
+	session.username = username
+
+	await session.save()
 
 	return Response.json({ url: "/shop" })
 }

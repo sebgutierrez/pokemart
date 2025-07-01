@@ -35,10 +35,10 @@ export async function signUp(query: Prisma.TrainerCreateInput){
 	} catch (e) {
 		if(e instanceof Prisma.PrismaClientKnownRequestError){
 			if(e.code === "P2002"){
-				return { error: "User already exists!"}
+				return { error: "Trainer already exists!"}
 			}
 		}
-		return { error: "Unexpected error occurred creating user. Please try again."}
+		return { error: "Unexpected error occurred creating trainer. Please try again."}
 	}
 }
 
@@ -54,6 +54,6 @@ export async function fetchTrainerHash(query: Prisma.TrainerFindUniqueArgs) {
 		})
 		return trainerHash ? { data: trainerHash.password } : { error: "Trainer does not exist." }
 	} catch (e) {
-		return { error: "Unexpected error fetching user. Please try again."}
+		return { error: "Unexpected error fetching trainer. Please try again."}
 	}
 }

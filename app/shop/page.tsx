@@ -30,7 +30,7 @@ const Shop = () => {
   async function onSubmit(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault()
     setLoading(true)
-    const response = await fetch('/shop/items/', {
+    fetch('/shop/items/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,10 +39,10 @@ const Shop = () => {
         "category": itemQuery.current.category,
         "sort": itemQuery.current.sort
       }),
-    });
-    if(response.ok){
-      const responseJSON = await response.json()
-      const items = responseJSON.data
+    })
+		.then((res) => res.json())
+		.then((res) => {
+      const items = res.data
       setItems(items)
       setSelectedItem({...items[0]})
       setPagination({
@@ -50,12 +50,11 @@ const Shop = () => {
         currentPage: 1,
         totalCount: items.length
       })
-    }
-    setLoading(false)
+      setLoading(false)
+		})
   }
 
   async function onSelectChange(e: React.ChangeEvent<HTMLSelectElement>){
-    e.preventDefault()
     // Don't store the empty option
     if(e.target.selectedIndex != 0){
       const select = e.target.name
@@ -117,7 +116,16 @@ const Shop = () => {
         </form>
       </div>
       <div className="flex mx-12">
-        { !loading && <ItemContainer items={items} onSelectItem={onSelectItem} pagination={pagination} setPagination={setPagination}></ItemContainer> }
+        { 
+          !loading && (
+            <ItemContainer 
+              items={items} 
+              onSelectItem={onSelectItem} 
+              pagination={pagination} 
+              setPagination={setPagination}
+            ></ItemContainer>
+          ) 
+        }
         { !loading && <ItemDisplay item={selectedItem} /> }
       </div>
     </div>
