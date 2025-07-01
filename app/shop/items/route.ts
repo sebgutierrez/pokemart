@@ -10,7 +10,7 @@ export async function POST(request: Request) {
 	if(!categoryValue){
 		return Response.json({ error: "No category was submitted" })
 	}
-	let query
+	let query: Prisma.ItemFindManyArgs
 	if(!categorySelectOptions.includes(categoryValue)){
 		return Response.json({ error: "Invalid category" })
 	} else {
@@ -32,6 +32,9 @@ export async function POST(request: Request) {
 			}
 		}
 	}
-	const items = await getItems(query as Prisma.ItemFindManyArgs)
-	return Response.json({ data: items })
+	const response = await getItems(query)
+	if(response.error){
+		return Response.json({ error: response.error })
+	}
+	return Response.json({ data: response.data })
 }

@@ -1,4 +1,4 @@
-
+import { redirect } from 'next/navigation'
 import { signUp } from '../../../prisma/api';
 import { genSalt, hash } from "bcrypt-ts";
 
@@ -88,5 +88,8 @@ export async function POST(request: Request) {
 	if(response && response.error){
 		return Response.json({ error: response.error })
 	}
-	return Response.json({ data: response })
+
+	console.log(response)
+
+	return Response.json({ url: "/shop" })
 }

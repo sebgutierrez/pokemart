@@ -21,7 +21,7 @@ export default function RootLayout({
               <Link href="/auth">Sign In</Link>
             </li> */}
             <li>
-              <Link href="/auth">Sign Up</Link>
+              <Link href="/sign-in">Sign In</Link>
             </li>
           </ul>
           <div className="border-l-2 pl-2 border-slate-900/10 cursor-pointer">
