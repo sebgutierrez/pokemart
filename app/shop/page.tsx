@@ -1,14 +1,17 @@
 "use client";
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, Suspense } from 'react';
 import "../../public/spritesheet-32x32.css"
 import ItemContainer from '../ui/shop/ItemListContainer';
 import ItemDisplay from '../ui/shop/ItemDisplay';
 import { Item } from '../ui/types/shop';
 
-
 const Shop = () => {
+  const [session, setSession] = useState({
+    username: "",
+    isLoggedIn: false
+  })
   const [items, setItems] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [selectedItem, setSelectedItem] = useState({
     name: "",
     category: "",
@@ -43,6 +46,7 @@ const Shop = () => {
 		.then((res) => res.json())
 		.then((res) => {
       const items = res.data
+      const session = res.session
       setItems(items)
       setSelectedItem({...items[0]})
       setPagination({
@@ -50,6 +54,7 @@ const Shop = () => {
         currentPage: 1,
         totalCount: items.length
       })
+      setSession(session)
       setLoading(false)
 		})
   }
@@ -115,19 +120,31 @@ const Shop = () => {
           </button>
         </form>
       </div>
-      <div className="flex mx-12">
-        { 
-          !loading && (
-            <ItemContainer 
-              items={items} 
-              onSelectItem={onSelectItem} 
-              pagination={pagination} 
-              setPagination={setPagination}
-            ></ItemContainer>
-          ) 
-        }
-        { !loading && <ItemDisplay item={selectedItem} /> }
-      </div>
+      { 
+        loading === false ? (
+          <div className="flex mx-12">
+            { 
+              items && items.length > 0 && (
+                <ItemContainer 
+                  items={items} 
+                  onSelectItem={onSelectItem} 
+                  pagination={pagination} 
+                  setPagination={setPagination}
+                ></ItemContainer>
+              ) 
+            }
+            { items && items.length > 0 && (
+                <ItemDisplay 
+                  item={selectedItem} 
+                  session={session}
+                ></ItemDisplay>
+              ) 
+            }
+          </div>
+        ) : (
+          <p>Loading...</p>
+        )
+      }
     </div>
 	)
 }

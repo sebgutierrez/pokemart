@@ -1,3 +1,5 @@
+import { SessionData } from "../../session/util"
+
 export type Item = {
   name: string,
   category: string,
@@ -21,7 +23,8 @@ export type ItemContainerProps = {
 }
 
 export type ItemDisplayProps = {
-	item: Item
+	item: Item,
+  session: SessionData
 }
 
 export type PaginationButtonProps = {

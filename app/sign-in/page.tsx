@@ -16,7 +16,7 @@ const SignIn = () => {
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>){
 		e.preventDefault()
-		const response = await fetch('/sign-in/auth/', {
+		fetch('/sign-in/auth/', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -25,19 +25,19 @@ const SignIn = () => {
 				"username": formData.current.username,
 				"password": formData.current.password
 			}),
-		});
-		if(response.ok){
-			const responseJSON = await response.json()
-			if(responseJSON.url){
-				router.push(responseJSON.url)
+		})
+		.then((res) => res.json())
+		.then((res) => {
+			if(res.url){
+				router.push(res.url)
 			}
-		  if(responseJSON.error){
+			if(res.error){
 				setErrors({
-					username: responseJSON.error.username,
-					password: responseJSON.error.password
+					username: res.error.username,
+					password: res.error.password
 				})
-		  }
-		}
+			}
+		})
   }
 
   async function onInputChange(e: React.ChangeEvent<HTMLInputElement>){

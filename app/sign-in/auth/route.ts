@@ -1,5 +1,10 @@
 import { fetchTrainerHash } from "../../../prisma/api";
 import { compare } from "bcrypt-ts";
+import { redirect } from "next/navigation"
+import { cookies } from "next/headers";
+import { getIronSession } from "iron-session";
+import { defaultSession, sessionOptions } from "../../session/util";
+import { SessionData } from "../../session/util";
 
 export async function POST(request: Request) {
 	const formData = await request.json();
@@ -43,5 +48,13 @@ export async function POST(request: Request) {
 			}
 		})
 	}
+
+	const session = await getIronSession<SessionData>(await cookies(), sessionOptions)
+
+	session.isLoggedIn = true
+	session.username = username
+
+	await session.save()
+
 	return Response.json({ url: "/shop" })
 }

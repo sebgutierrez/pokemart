@@ -4,6 +4,7 @@ import { cookies } from "next/headers";
 import { getIronSession } from "iron-session";
 import { defaultSession, sessionOptions } from "../../session/util";
 import { SessionData } from "../../session/util";
+import { redirect } from "next/navigation"
 
 async function usernameValidator(username: string): Promise<string[]> {
 	let errors = []

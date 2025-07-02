@@ -1,8 +1,25 @@
 "use client";
-import React from 'react';
+import React, { useRef } from 'react';
 import { ItemDisplayProps } from "../types/shop";
 
-const ItemDisplay = ({ item }: ItemDisplayProps) => {
+const ItemDisplay = ({ item, session }: ItemDisplayProps) => {
+	const cartButton = useRef({
+		quantity: 0
+	}) 
+
+	async function onInputChange(e: React.ChangeEvent<HTMLInputElement>){
+		cartButton.current = {
+			quantity: Number(e.target.value)
+		}
+	}
+
+	async function addToCart(){
+		if(session.isLoggedIn !== true){
+			console.log("Not logged in!")
+			return
+		}
+	}
+
 	return (
 		<div className="flex w-full gap-x-4 border-2 border-red-500 px-8 py-4">
 			<div className="w-full flex flex-col border-black rounded-md">
@@ -17,6 +34,11 @@ const ItemDisplay = ({ item }: ItemDisplayProps) => {
 					<div className="">{item.category}</div>
 					<div className="">{item.debutGeneration}</div>
 					<div className="">{item.buyPrice}</div>
+				</div>
+				<div className="flex">
+					<label htmlFor="add-to-cart">Qty:</label>
+					<input name="add-to-cart" id="add-to-cart" type="number" onChange={onInputChange}/>
+					<button onClick={addToCart}>Add to Cart</button>
 				</div>
 			</div>
 		</div>
