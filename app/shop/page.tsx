@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useRef, Suspense } from 'react';
 import "../../public/spritesheet-32x32.css"
-import ItemContainer from '../ui/shop/ItemListContainer';
-import ItemDisplay from '../ui/shop/ItemDisplay';
+import ItemList from '../ui/shop/ItemList';
+import ItemBox from '../ui/shop/ItemBox';
 import { Item } from '../ui/types/shop';
 
 const Shop = () => {
@@ -125,19 +125,18 @@ const Shop = () => {
           <div className="flex mx-12">
             { 
               items && items.length > 0 && (
-                <ItemContainer 
-                  items={items} 
-                  onSelectItem={onSelectItem} 
-                  pagination={pagination} 
-                  setPagination={setPagination}
-                ></ItemContainer>
-              ) 
-            }
-            { items && items.length > 0 && (
-                <ItemDisplay 
-                  item={selectedItem} 
-                  session={session}
-                ></ItemDisplay>
+                <div className="flex">
+                  <ItemList 
+                    items={items} 
+                    onSelectItem={onSelectItem} 
+                    pagination={pagination} 
+                    setPagination={setPagination}
+                  ></ItemList>
+                  <ItemBox 
+                    item={selectedItem} 
+                    session={session}
+                  ></ItemBox>
+                </div>
               ) 
             }
           </div>
