@@ -13,7 +13,7 @@ export default async function CartLayout({
 	
 	if(session.isLoggedIn === false) {
 		return (
-			<div>
+			<div className="">
 				<p className="text-lg">
 					<Link href="/sign-in" className="underline">Sign In</Link> to view your cart.
 				</p>

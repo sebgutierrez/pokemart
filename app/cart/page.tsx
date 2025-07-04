@@ -3,7 +3,7 @@ import React from 'react';
 import "../globals.css";
 import { getSession } from '../session/util';
 import { getCartItems } from '../../prisma/api';
-import CartItemList from '../ui/cart/CartItemList';
+import CartContainer from '../ui/cart/CartContainer';
 
 const CartPage = async () => {
 
@@ -29,6 +29,11 @@ const CartPage = async () => {
 
 	const cartItems = await getCartItems(cartWhere, cartSelect)
 
+	let totalCost = 0
+	if(cartItems.data){
+		totalCost = cartItems.data.reduce((acc, curr) => acc + curr.item.buyPrice * curr.quantity, 0)
+	}
+
 	let error = cartItems.error ? cartItems.error : null
 
 	if(error){
@@ -41,7 +46,7 @@ const CartPage = async () => {
 
 	return (
 		<div className="">
-			<CartItemList cartItems={cartItems} />
+			<CartContainer cartItems={cartItems} totalCost={totalCost} />
 		</div>
 	)
 }

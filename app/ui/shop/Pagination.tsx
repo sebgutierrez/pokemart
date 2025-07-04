@@ -19,9 +19,7 @@ const Pagination = ({ pagination, onPageChange }: PaginationButtonProps) => {
 				className={`border-2 border-black ${buttonHighlightClass}`}
 				onClick={() => onPageChange(i)}
 			>
-				<button className="cursor-pointer px-2 py-1">
-					{i}
-				</button>
+				<button className="cursor-pointer px-2 py-1">{i}</button>
 			</li>
 		)
 	}

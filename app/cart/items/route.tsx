@@ -1,7 +1,6 @@
 import { Prisma } from '@prisma/client';
 import { getCartItem, getCartItems, updateCartItem, deleteCartItem, createCartItem } from '../../../prisma/api';
 import { getSession } from "../../session/util";
-import CartItemList from '@/app/ui/cart/CartItemList';
 import { revalidatePath } from 'next/cache'
 
 export async function POST(request: Request) {
@@ -43,14 +42,10 @@ export async function POST(request: Request) {
 
 		const cartItem = await deleteCartItem(deleteCartItemQuery)
 
-		console.log("item: ", cartItem)
 		if(cartItem.error){
 			return Response.json({ error: cartItem.error })
 		}
 
-
-		console.log("delete: ", cartItem)
-		console.log("revalidating...")
 		revalidatePath('/cart')
 		return Response.json({ revalidated: true, data: cartItem.data })
 	}

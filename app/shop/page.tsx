@@ -83,7 +83,6 @@ const ShopPage = () => {
   }
 
   async function onSelectItem(item: Item){
-    console.log(item)
     setSelectedItem(item)
   }
 

@@ -34,12 +34,12 @@ const Header = async ({ session }: { session: SessionData } ) => {
 						)
 					}
 				</ul>
-				<div className="flex border-l-2 pl-2 pr-2 gap-x-2">
-					<Link href="/bag">
+				<div className="flex border-l-2 pl-2 gap-x-2">
+					{/* <Link href="/bag">
 						<div className="inline-flex items-center justify-center w-[30px] h-[30px] cursor-pointer">
 							Bag
 						</div>
-					</Link>
+					</Link> */}
 					<Link href="/cart">
 						<div className="inline-flex items-center justify-center w-[30px] h-[30px] cursor-pointer">
 							Cart
