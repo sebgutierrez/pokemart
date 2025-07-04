@@ -9,15 +9,32 @@ const ItemDisplay = ({ item, session }: ItemDisplayProps) => {
 
 	async function onInputChange(e: React.ChangeEvent<HTMLInputElement>){
 		cartButton.current = {
+			...cartButton.current,
 			quantity: Number(e.target.value)
 		}
+		console.log(cartButton.current)
 	}
 
 	async function addToCart(){
 		if(session.isLoggedIn !== true){
-			console.log("Not logged in!")
 			return
 		}
+		fetch('/cart/items/', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				"itemId": item.id,
+				"quantity": cartButton.current.quantity
+			}),
+		})
+		.then((res) => res.json())
+		.then((res) => {
+		})
+		.catch((error) => {
+			console.error("Error adding item to cart: ", error)
+		})
 	}
 
 	return (

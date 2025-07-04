@@ -3,7 +3,7 @@ import "./globals.css";
 import { getSession } from './session/util';
 import Header from './ui/header';
 
-const Home = async () => {
+const HomePage = async () => {
   const session = await getSession()
 
   return (
@@ -16,4 +16,4 @@ const Home = async () => {
   );
 };
 
-export default Home;
+export default HomePage;

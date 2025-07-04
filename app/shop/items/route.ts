@@ -9,13 +9,9 @@ export async function POST(request: Request) {
 
 	const formData = await request.json();
 	const categoryValue = formData.category
-	if(!categoryValue){
-		return Response.json({ error: "No category was submitted" })
-	}
-	let query: Prisma.ItemFindManyArgs
-	if(!categorySelectOptions.includes(categoryValue)){
-		return Response.json({ error: "Invalid category" })
-	} else {
+
+	let query: Prisma.ItemFindManyArgs = {}
+	if(categorySelectOptions.includes(categoryValue) && categoryValue !== "All"){
 		query = {
 			where: {
 				category: categoryValue
@@ -23,9 +19,7 @@ export async function POST(request: Request) {
 		}
 	}
 	const sortValue = formData.sort
-	if(!formData.sort && !sortSelectOptions.includes(sortValue)){
-		return Response.json({ error: "Invalid sorting method" })
-	} else {
+	if(sortSelectOptions.includes(sortValue)){
 		const [sortField, sortMethod] = sortValue.split("-")
 		query = {
 			...query,
@@ -36,6 +30,7 @@ export async function POST(request: Request) {
 	}
 
 	const response = await getItems(query)
+
 	if(response.error){
 		return Response.json({ error: response.error })
 	}

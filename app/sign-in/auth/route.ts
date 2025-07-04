@@ -1,4 +1,4 @@
-import { fetchTrainerHash } from "../../../prisma/api";
+import { fetchTrainer } from "../../../prisma/api";
 import { compare } from "bcrypt-ts";
 import { redirect } from "next/navigation"
 import { cookies } from "next/headers";
@@ -25,21 +25,21 @@ export async function POST(request: Request) {
 		})
 	}
 
-	const response = await fetchTrainerHash({
+	const trainer = await fetchTrainer({
 		where: {
 			username: username
 		}
 	})
 
-	if(response.error){
+	if(trainer.error){
 		return Response.json({ 
 			error: {
-				username: [response.error]
+				username: [trainer.error]
 			}
 		})
 	}
 
-	const isCorrectPassword = await compare(password, response.data as string)
+	const isCorrectPassword = await compare(password, trainer?.data?.password as string)
 
 	if(!isCorrectPassword){
 		return Response.json({ 
@@ -53,6 +53,7 @@ export async function POST(request: Request) {
 
 	session.isLoggedIn = true
 	session.username = username
+	session.userId = trainer?.data?.id.toString()
 
 	await session.save()
 

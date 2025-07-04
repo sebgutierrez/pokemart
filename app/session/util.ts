@@ -3,11 +3,13 @@ import { SessionOptions, getIronSession } from "iron-session";
 import { cookies } from "next/headers";
 
 export interface SessionData {
+  userId?: string;
   username: string;
   isLoggedIn: boolean;
 }
 
 export const defaultSession: SessionData = {
+  userId: "",
   username: "",
   isLoggedIn: false,
 };
@@ -27,6 +29,7 @@ export async function getSession() {
   if (!session.isLoggedIn) {
     session.isLoggedIn = defaultSession.isLoggedIn;
     session.username = defaultSession.username;
+    session.userId = defaultSession.userId;
   }
 
   return session;

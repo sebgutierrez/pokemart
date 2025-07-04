@@ -1,6 +1,7 @@
 import { SessionData } from "../../session/util"
 
 export type Item = {
+  id: string,
   name: string,
   category: string,
   description: string,
@@ -30,4 +31,9 @@ export type ItemDisplayProps = {
 export type PaginationButtonProps = {
 	pagination: Pagination,
 	onPageChange: (page: number) => void
+}
+
+export type CartItem = {
+  quantity: number;
+  item: Item;
 }

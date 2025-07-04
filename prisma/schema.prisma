@@ -18,6 +18,7 @@ model Item {
   debutGeneration String
   cssClass        String    @unique
   itemBags        ItemBag[]
+  cartItems       CartItem[]
 }
 
 model Trainer {
@@ -25,9 +26,10 @@ model Trainer {
   username    String   @unique
   password    String
   region      String?
-  pokeDollars Int      @default(0)
+  pokeDollars Int      @default(5000)
   createdAt   DateTime @default(now())
   itemBag     ItemBag?
+  cartItems   CartItem[]
 }
 
 model ItemBag {
@@ -37,4 +39,14 @@ model ItemBag {
   trainerId Int     @unique
   trainer   Trainer @relation(fields: [trainerId], references: [id], onDelete: Cascade)
   item      Item    @relation(fields: [itemId], references: [id])
+}
+
+model CartItem {
+  id            Int      @id @default(autoincrement())
+  quantity      Int
+  itemId        Int
+  trainerId     Int      
+  trainer       Trainer  @relation(fields: [trainerId], references: [id], onDelete: Cascade)
+  item          Item     @relation(fields: [itemId], references: [id])
+  createdAt     DateTime @default(now())
 }

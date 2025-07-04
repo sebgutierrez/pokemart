@@ -235,15 +235,6 @@
 			"cssClass": "mail-grass-mail"
 		},
 		{
-			"name": "Harbor Mail",
-			"category": "Mail",
-			"description": "A Wingull-print Mail to be held by a Pokémon.",
-			"buyPrice": 50,
-			"sellPrice": 25,
-			"debutGeneration": "III",
-			"cssClass": "mail-harbor-mail"
-		},
-		{
 			"name": "Space Mail",
 			"category": "Mail",
 			"description": "Stationery featuring a print the huge expanse of space. Let a Pokémon hold it for use.",

@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
   const action = new URL(request.url).searchParams.get("action")
   if (action === "logout") {
     session.destroy()
-	redirect("/")
+	  redirect("/")
   }
 
   if (session.isLoggedIn !== true) {

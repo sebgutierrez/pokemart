@@ -1,11 +1,11 @@
 "use client";
-import React, { useState, useRef, Suspense } from 'react';
+import React, { useState, useRef } from 'react';
 import "../../public/spritesheet-32x32.css"
 import ItemList from '../ui/shop/ItemList';
 import ItemBox from '../ui/shop/ItemBox';
 import { Item } from '../ui/types/shop';
 
-const Shop = () => {
+const ShopPage = () => {
   const [session, setSession] = useState({
     username: "",
     isLoggedIn: false
@@ -13,6 +13,7 @@ const Shop = () => {
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(false)
   const [selectedItem, setSelectedItem] = useState({
+    id: "",
     name: "",
     category: "",
     description: "",
@@ -54,7 +55,10 @@ const Shop = () => {
         currentPage: 1,
         totalCount: items.length
       })
-      setSession(session)
+      setSession({
+        username: session.username,
+        isLoggedIn: session.isLoggedIn
+      })
       setLoading(false)
 		})
   }
@@ -79,6 +83,7 @@ const Shop = () => {
   }
 
   async function onSelectItem(item: Item){
+    console.log(item)
     setSelectedItem(item)
   }
 
@@ -94,6 +99,7 @@ const Shop = () => {
                 onChange={onSelectChange}
               >
                 <option value="">Category</option>
+                <option value="All">All</option>
                 <option value="Poké Ball">Poké Ball</option>
                 <option value="Recovery Items">Recovery Items</option>
                 <option value="Battle Items">Battle Items</option>
@@ -147,4 +153,4 @@ const Shop = () => {
     </div>
 	)
 }
-export default Shop;
+export default ShopPage;

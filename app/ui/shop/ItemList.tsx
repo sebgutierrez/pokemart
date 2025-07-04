@@ -15,11 +15,14 @@ const ItemContainer = ({ items, onSelectItem, pagination, setPagination }: ItemC
     const className = "pkspr-" + item.cssClass + " scale-150"
     return (
       <li className="flex items-center gap-x-2 relative w-full" onClick={() => onSelectItem(item)} key={item.cssClass}>
-        <div className="flex w-full px-2 items-center py-1 border-2 border-black rounded-full ">
-          <div className="relative w-[40px] h-[40px] pl-[2px] pt-[2px] border-2 border-black rounded-full">
-            <div className={className}></div>
+        <div className="flex w-full justify-between px-2 items-center py-1 border-2 border-black rounded-full ">
+          <div className="flex items-center">
+            <div className="relative w-[40px] h-[40px] pl-[2px] pt-[2px] border-2 border-black rounded-full">
+              <div className={className}></div>
+            </div>
+            <div className="text-[20px] pl-2">{item.name}</div>
           </div>
-          <div className="text-[20px] pl-2">{item.name}</div>
+          <div className="text-[20px] pr-2">{item.buyPrice}</div>
         </div>
       </li>
     )

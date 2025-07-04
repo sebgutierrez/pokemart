@@ -1,4 +1,4 @@
-import { signUp } from '../../../prisma/api';
+import { createTrainer } from '../../../prisma/api';
 import { genSalt, hash } from "bcrypt-ts";
 import { cookies } from "next/headers";
 import { getIronSession } from "iron-session";
@@ -26,8 +26,8 @@ async function usernameValidator(username: string): Promise<string[]> {
 
 async function passwordValidator(password: string): Promise<string[]>{
 	let errors = []
-	if(password.length <= 4){
-		errors.push("Password must be longer than 4 characters")
+	if(password.length <= 3){
+		errors.push("Password must be longer than 3 characters")
 	}
 	let unicode, i, len
 	for(i = 0, len = password.length; i < len; i++){
@@ -84,15 +84,15 @@ export async function POST(request: Request) {
 	const salt = await genSalt(10)
 	const hashedPassword = await hash(password, salt)
 
-	const response = await signUp({
+	const trainer = await createTrainer({
 		username: username,
 		password: hashedPassword
 	})
 
-	if(response && response.error){
+	if(trainer.error !== undefined){
 		return Response.json({ 
 			error: {
-				username: [response.error] 
+				username: [trainer.error] 
 			}
 		})
 	}
@@ -101,6 +101,7 @@ export async function POST(request: Request) {
 
 	session.isLoggedIn = true
 	session.username = username
+	session.userId = trainer.data.id.toString()
 
 	await session.save()
 
