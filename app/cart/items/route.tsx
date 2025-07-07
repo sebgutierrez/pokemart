@@ -14,7 +14,7 @@ export async function POST(request: Request) {
 		return Response.json({ error: "You must be logged in to add items to your cart." })
 	}
 
-	let getCartItemQuery: Prisma.CartItemFindFirstArgs = {
+	const getCartItemQuery: Prisma.CartItemFindFirstArgs = {
 		select: {
 			id: true,
 			quantity: true
@@ -94,14 +94,14 @@ export async function POST(request: Request) {
 	return Response.json({ data: cartItem.data })
 }
 
-export async function GET(request: Request){
+export async function GET(){
 	const session = await getSession()
 
-	let cartWhere: Prisma.CartItemWhereInput = {
+	const cartWhere: Prisma.CartItemWhereInput = {
 		trainerId: Number(session.userId)
 	}
 
-	let cartSelect: Prisma.CartItemSelect = {
+	const cartSelect: Prisma.CartItemSelect = {
 		quantity: true,
 		item: {
 			select: {

@@ -1,9 +1,8 @@
 import { fetchTrainer } from "../../../prisma/api";
 import { compare } from "bcrypt-ts";
-import { redirect } from "next/navigation"
 import { cookies } from "next/headers";
 import { getIronSession } from "iron-session";
-import { defaultSession, sessionOptions } from "../../session/util";
+import { sessionOptions } from "../../session/util";
 import { SessionData } from "../../session/util";
 
 export async function POST(request: Request) {

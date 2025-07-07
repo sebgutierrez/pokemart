@@ -12,7 +12,7 @@ const Pagination = ({ pagination, onPageChange }: PaginationButtonProps) => {
 
 	const pageButtonsArray = []
 	for (let i = 1; i <= totalPages; i++){
-		let buttonHighlightClass = pagination.currentPage == i ? "text-green-400" : "text-blue-400"
+		const buttonHighlightClass = pagination.currentPage == i ? "text-green-400" : "text-blue-400"
 		pageButtonsArray.push(
 			<li 
 				key={"page#" + i} 

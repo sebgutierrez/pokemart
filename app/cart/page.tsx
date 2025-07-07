@@ -9,11 +9,11 @@ const CartPage = async () => {
 
 	const session = await getSession()
 
-	let cartWhere: Prisma.CartItemWhereInput = {
+	const cartWhere: Prisma.CartItemWhereInput = {
 		trainerId: Number(session.userId)
 	}
 
-	let cartSelect: Prisma.CartItemSelect = {
+	const cartSelect: Prisma.CartItemSelect = {
 		id: true,
 		quantity: true,
 		item: {
@@ -29,12 +29,13 @@ const CartPage = async () => {
 
 	const cartItems = await getCartItems(cartWhere, cartSelect)
 
-	let totalCost = 0
+	let totalCost: number, totalQuantities: number = 0
 	if(cartItems.data){
 		totalCost = cartItems.data.reduce((acc, curr) => acc + curr.item.buyPrice * curr.quantity, 0)
+		totalQuantities = cartItems.data.reduce((acc, curr) => acc + curr.quantity, 0)
 	}
 
-	let error = cartItems.error ? cartItems.error : null
+	const error = cartItems.error ? cartItems.error : null
 
 	if(error){
 		return (
@@ -46,7 +47,7 @@ const CartPage = async () => {
 
 	return (
 		<div className="">
-			<CartContainer cartItems={cartItems} totalCost={totalCost} />
+			<CartContainer cartItems={cartItems} totalCost={totalCost} totalQuantities={totalQuantities}/>
 		</div>
 	)
 }

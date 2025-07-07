@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react';
 import "../../public/spritesheet-32x32.css"
 import ItemList from '../ui/shop/ItemList';
-import ItemBox from '../ui/shop/ItemBox';
+import ItemDisplay from '../ui/shop/ItemDisplay';
 import { Item } from '../ui/types/shop';
 
 const ShopPage = () => {
@@ -137,10 +137,10 @@ const ShopPage = () => {
                     pagination={pagination} 
                     setPagination={setPagination}
                   ></ItemList>
-                  <ItemBox 
+                  <ItemDisplay 
                     item={selectedItem} 
                     session={session}
-                  ></ItemBox>
+                  ></ItemDisplay>
                 </div>
               ) 
             }

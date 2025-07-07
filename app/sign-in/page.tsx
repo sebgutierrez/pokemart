@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 
 const SignInPage = () => {
-  const router = useRouter()
+  	const router = useRouter()
 	const [errors, setErrors] = useState({
 		username: [],
 		password: []
@@ -76,7 +76,7 @@ const SignInPage = () => {
 				<button className="border-2 cursor-pointer px-4" type="submit">Submit</button>
 			</form>
 			<div className="">
-				<Link href="/sign-up" className="underline">Don't have an account?</Link>
+				<Link href="/sign-up" className="underline">Don&apos;t have an account?</Link>
 			</div>
 		</div>
   );

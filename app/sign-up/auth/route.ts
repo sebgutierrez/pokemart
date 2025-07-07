@@ -2,12 +2,11 @@ import { createTrainer } from '../../../prisma/api';
 import { genSalt, hash } from "bcrypt-ts";
 import { cookies } from "next/headers";
 import { getIronSession } from "iron-session";
-import { defaultSession, sessionOptions } from "../../session/util";
+import { sessionOptions } from "../../session/util";
 import { SessionData } from "../../session/util";
-import { redirect } from "next/navigation"
 
 async function usernameValidator(username: string): Promise<string[]> {
-	let errors = []
+	const errors = []
 	if(username.length <= 2){
 		errors.push("Trainer name must be longer than 2 characters")
 	}
@@ -25,7 +24,7 @@ async function usernameValidator(username: string): Promise<string[]> {
 }
 
 async function passwordValidator(password: string): Promise<string[]>{
-	let errors = []
+	const errors = []
 	if(password.length <= 3){
 		errors.push("Password must be longer than 3 characters")
 	}
@@ -56,7 +55,7 @@ export async function POST(request: Request) {
 			}
 		})
 	}
-	let usernameErrors = await usernameValidator(username)
+	const usernameErrors = await usernameValidator(username)
 	if(usernameErrors.length != 0){
 		return Response.json({ 
 			error: {
@@ -72,7 +71,7 @@ export async function POST(request: Request) {
 			}
 		})
 	}
-	let passwordErrors = await passwordValidator(password)
+	const passwordErrors = await passwordValidator(password)
 	if(passwordErrors.length != 0){
 		return Response.json({ 
 			error: {

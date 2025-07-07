@@ -3,7 +3,7 @@ import React from 'react';
 import { Item, ItemContainerProps } from "../types/shop";
 import Pagination from './Pagination';
 
-const ItemContainer = ({ items, onSelectItem, pagination, setPagination }: ItemContainerProps) => {
+const ItemList = ({ items, onSelectItem, pagination, setPagination }: ItemContainerProps) => {
 
   const startIndex = (pagination.currentPage - 1) * pagination.perPage
   const endIndex = startIndex + pagination.perPage - 1
@@ -47,4 +47,4 @@ const ItemContainer = ({ items, onSelectItem, pagination, setPagination }: ItemC
   );
 };
 
-export default ItemContainer;
+export default ItemList;
