@@ -6,12 +6,14 @@ export interface SessionData {
   userId?: string;
   username: string;
   isLoggedIn: boolean;
+  pokeDollars: number;
 }
 
 export const defaultSession: SessionData = {
   userId: "",
   username: "",
   isLoggedIn: false,
+  pokeDollars: 0
 };
 
 export const sessionOptions: SessionOptions = {
@@ -27,9 +29,10 @@ export async function getSession() {
   const session = await getIronSession<SessionData>(await cookies(), sessionOptions);
 
   if (!session.isLoggedIn) {
-    session.isLoggedIn = defaultSession.isLoggedIn;
-    session.username = defaultSession.username;
-    session.userId = defaultSession.userId;
+    session.isLoggedIn = defaultSession.isLoggedIn
+    session.username = defaultSession.username
+    session.userId = defaultSession.userId
+    session.pokeDollars = defaultSession.pokeDollars
   }
 
   return session;

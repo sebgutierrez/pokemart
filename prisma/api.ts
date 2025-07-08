@@ -25,7 +25,8 @@ export async function createTrainer(query: Prisma.TrainerCreateInput){
 	try {
 		const trainer = await prisma.trainer.create({
 			select: {
-				id: true
+				id: true,
+				pokeDollars: true
 			},
 			data: {
 				...query
@@ -47,7 +48,8 @@ export async function fetchTrainer(query: Prisma.TrainerFindUniqueArgs) {
 		const trainer = await prisma.trainer.findUnique({
 			select: {
 				id: true,
-				password: true
+				password: true,
+				pokeDollars: true
 			},
 			where: {
 				username: query.where.username

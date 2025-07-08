@@ -4,7 +4,7 @@ import Link from 'next/link';
 import CartItem from "./CartItem";
 
 // TODO: replace any with proper type
-const CartItemContainer = ({ cartItems, totalCost, totalQuantities }: any ) => {
+const CartItemContainer = ({ pokeDollars, cartItems, totalCost, totalQuantities }: any ) => {
 	const [cart, setCart] = useState(cartItems)
 	const [currentTotal, setCurrentTotal] = useState(totalCost)
 	const [currentQuantities, setCurrentQuantities] = useState(totalQuantities)
@@ -26,16 +26,29 @@ const CartItemContainer = ({ cartItems, totalCost, totalQuantities }: any ) => {
 		)
 	})
 
+	const remainingBalance = pokeDollars - currentTotal
+
 	return (
 		<div className="mx-12 my-8">
 			<ul className=" flex flex-col w-full gap-y-2">{cartItemsList}</ul>
 			<div className="text-right">
-				Total: ${currentTotal}
+				Total ${currentTotal}
+			</div>
+			<div className="text-right">
+				Remaining Balance ${remainingBalance}
 			</div>
 			<div className="flex justify-end">
-				<button className="px-3 py-2 rounded-full bg-blue-600 text-white">
-					<Link href="/cart">Checkout ({currentQuantities}) items</Link>
-				</button>
+				{ 
+					remainingBalance > 0 ? (
+						<button className="px-3 py-2 rounded-full bg-blue-600 text-white">
+							<Link href="/cart">Checkout ({currentQuantities}) items</Link>
+						</button>
+					) : (
+						<button className="px-3 py-2 rounded-full bg-blue-600 text-white cursor-not-allowed">
+							<p>Insufficient funds!</p>
+						</button>
+					)
+				}
 			</div>
 		</div>
 	);

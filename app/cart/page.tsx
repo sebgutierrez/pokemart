@@ -47,7 +47,7 @@ const CartPage = async () => {
 
 	return (
 		<div className="">
-			<CartContainer cartItems={cartItems} totalCost={totalCost} totalQuantities={totalQuantities}/>
+			<CartContainer pokeDollars={session.pokeDollars} cartItems={cartItems} totalCost={totalCost} totalQuantities={totalQuantities}/>
 		</div>
 	)
 }

@@ -53,6 +53,7 @@ export async function POST(request: Request) {
 	session.isLoggedIn = true
 	session.username = username
 	session.userId = trainer?.data?.id.toString()
+	session.pokeDollars = trainer?.data?.pokeDollars
 
 	await session.save()
 

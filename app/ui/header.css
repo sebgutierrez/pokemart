@@ -1,0 +1,24 @@
+.profile-menu {
+	position: relative;
+	border: 2px solid red;
+}
+
+.profile-sub-menu {
+	display: none;
+}
+
+.profile-menu:hover {
+	cursor: pointer;
+	.profile-sub-menu {
+		position: absolute;
+		display: flex;
+		width: 122px;
+		right: 0px;
+		flex-direction: column;
+		row-gap: 0.5rem;
+		bottom: -4.25rem;
+		padding: 0.5rem;
+		border: 2px solid black;
+		z-index: 100;
+	}
+}

@@ -8,7 +8,8 @@ import { Item } from '../ui/types/shop';
 const ShopPage = () => {
   const [session, setSession] = useState({
     username: "",
-    isLoggedIn: false
+    isLoggedIn: false,
+    pokeDollars: 0
   })
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(false)
@@ -57,7 +58,8 @@ const ShopPage = () => {
       })
       setSession({
         username: session.username,
-        isLoggedIn: session.isLoggedIn
+        isLoggedIn: session.isLoggedIn,
+        pokeDollars: session.pokeDollars
       })
       setLoading(false)
 		})
