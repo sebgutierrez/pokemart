@@ -41,7 +41,7 @@ const CartItemContainer = ({ pokeDollars, cartItems, totalCost, totalQuantities 
 				{ 
 					remainingBalance > 0 ? (
 						<button className="px-3 py-2 rounded-full bg-blue-600 text-white">
-							<Link href="/cart">Checkout ({currentQuantities}) items</Link>
+							<Link href="/checkout">Checkout ({currentQuantities}) items</Link>
 						</button>
 					) : (
 						<button className="px-3 py-2 rounded-full bg-blue-600 text-white cursor-not-allowed">
