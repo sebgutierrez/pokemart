@@ -9,16 +9,17 @@ datasource db {
 }
 
 model Item {
-  id              Int       @id @default(autoincrement())
-  name            String    @unique
+  id              Int            @id @default(autoincrement())
+  name            String         @unique
   category        String
   description     String
   buyPrice        Int
   sellPrice       Int
   debutGeneration String
-  cssClass        String    @unique
+  cssClass        String         @unique
   itemBags        ItemBag[]
   cartItems       CartItem[]
+  orderDetails    OrderDetails[]
 }
 
 model Trainer {
@@ -30,6 +31,7 @@ model Trainer {
   createdAt   DateTime @default(now())
   itemBag     ItemBag?
   cartItems   CartItem[]
+  orders      Order[]
 }
 
 model ItemBag {
@@ -50,3 +52,24 @@ model CartItem {
   item          Item     @relation(fields: [itemId], references: [id])
   createdAt     DateTime @default(now())
 }
+
+model Order {
+  id           Int     @id @default(autoincrement())
+  trainerId    Int 
+  trainer      Trainer @relation(fields: [trainerId], references: [id], onDelete: Cascade)
+  numItems     Int
+  region       String
+  city         String
+  total        Int
+  date         DateTime
+  orderDetails OrderDetails[]
+}
+
+model OrderDetails {
+  id       Int   @id @default(autoincrement())
+  orderId  Int
+  order    Order @relation(fields: [orderId], references: [id])
+  itemId   Int
+  item     Item  @relation(fields: [itemId], references: [id])
+  quantity Int
+} 
